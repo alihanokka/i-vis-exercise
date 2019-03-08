@@ -1,7 +1,10 @@
 let neo4j = require('neo4j-driver');
 
+let username = "USER_NAME";
+let password = "PASSWORD";
+
 //Connection to Neo4j database
-const driver = neo4j.v1.driver("bolt://localhost:7687", neo4j.v1.auth.basic('neo4j', 'heaven'));
+const driver = neo4j.v1.driver("bolt://localhost:7687", neo4j.v1.auth.basic('username', 'password'));
 const session = driver.session();
 
 // Method perform all queries to the database, HOWEVER it returns a promise!!
