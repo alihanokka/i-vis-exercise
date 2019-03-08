@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>i-Vis Exercise</title>
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="stylesheets/skeleton.css">
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/cytoscape-context-menus.css">
+    <link rel="stylesheet" href="stylesheets/jquery.qtip.css">
+
+    <!-- Scripts -->
+    <script src="bundle.js" defer></script>
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="container">
+
+            <div class="row">
+                <h1>An Exercise on Movie Database</h1>
+            </div>
+
+            <div class="row">
+                <div class = "four columns">
+                    <input type="text" class="u-full-width" id="actor_textfield" placeholder="Enter an actor's name (i.e. Tom Hanks)">
+                </div>
+                <div class = "four columns">
+                    <input type="text" class="u-full-width" id="actor_number" placeholder="Enter an actor number">
+                </div>
+                <div class = "four columns">
+                    <input type="button" class="button-primary u-full-width" id="submitButton" value="Submit">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="loader" id="loader"></div>
+
+        <div id="cy"></div>
+
+    </div>
+</body>
+</html>
+
+<script>document.getElementById("loader").style.display = "none";</script>
