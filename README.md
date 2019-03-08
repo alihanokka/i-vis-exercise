@@ -32,7 +32,7 @@ $ npm -v
 ### Deployment
 
 * Make sure Neo4j is up and running. The database interface at http://localhost:7474/ will require you to enter your credentials (Default is username:neo4j, password: neo4j). When logging in the first time it will force you to change your password. Remember this password as you will need it.
-* Extract this application's ZIP and enter you credentials that you defined above into /public/javascripts/neo4jAPI.js. Currently, this is hard-coded.
+* Extract this application's ZIP and enter your credentials that you defined above into /public/javascripts/neo4jAPI.js. Currently, this is hard-coded.
 * On ~/i-vis-exercise/ run
 
 ```
